@@ -20,6 +20,9 @@ header {
       margin-left: 44px;
       color: white;
       text-decoration: none;
+      .active {
+        color: rgb(230, 57, 70) !important;
+      }
     }
   }
 }
