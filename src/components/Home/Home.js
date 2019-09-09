@@ -1,12 +1,13 @@
 import React from "react";
 import * as THREE from "three";
-import NET from "./vanta.net.min.js";
+import NET from "./vanta/vanta.net.min.js";
 
 class Home extends React.Component {
   constructor() {
     super();
     this.myRef = React.createRef();
   }
+
   componentDidMount() {
     this.effect = NET({
       el: this.myRef.current,
