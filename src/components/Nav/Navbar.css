@@ -1,0 +1,23 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100; }
+  header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 53px;
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    background: #00072e; }
+    header nav .home {
+      margin-left: 130px; }
+    header nav a {
+      margin-left: 44px;
+      color: white;
+      text-decoration: none; }
+
+/*# sourceMappingURL=Navbar.css.map */

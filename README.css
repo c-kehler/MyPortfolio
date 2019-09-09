@@ -1,0 +1,64 @@
+/*
+Error: Invalid CSS after "...h [Create React": expected "]", was " App](https://g..."
+        on line 1 of README.md
+
+1: This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+2: 
+3: ## Available Scripts
+4: 
+5: In the project directory, you can run:
+6: 
+
+Backtrace:
+README.md:1
+/Users/charliekehler/.rvm/gems/ruby-2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
+/Users/charliekehler/.rvm/gems/ruby-2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
+/Users/charliekehler/.rvm/gems/ruby-2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1233:in `tok!'
+/Users/charliekehler/.rvm/gems/ruby-2.6.0/gems/sass-3.7.4/lib/sass/scss/static_parser.rb:249:in `attrib'
+/Users/charliekehler/.rvm/gems/ruby-2.6.0/gems/sass-3.7.4/lib/sass/scss/static_parser.rb:156:in `simple_selector_sequence'
+/Users/charliekehler/.rvm/gems/ruby-2.6.0/gems/sass-3.7.4/lib/sass/scss/static_parser.rb:115:in `selector'
+/Users/charliekehler/.rvm/gems/ruby-2.6.0/gems/sass-3.7.4/lib/sass/scss/static_parser.rb:83:in `selector_comma_sequence'
+/Users/charliekehler/.rvm/gems/ruby-2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1216:in `expr!'
+/Users/charliekehler/.rvm/gems/ruby-2.6.0/gems/sass-3.7.4/lib/sass/scss/static_parser.rb:20:in `parse_selector'
+/Users/charliekehler/.rvm/gems/ruby-2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:434:in `visit_rule'
+/Users/charliekehler/.rvm/gems/ruby-2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/charliekehler/.rvm/gems/ruby-2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/charliekehler/.rvm/gems/ruby-2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+/Users/charliekehler/.rvm/gems/ruby-2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/Users/charliekehler/.rvm/gems/ruby-2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+/Users/charliekehler/.rvm/gems/ruby-2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/charliekehler/.rvm/gems/ruby-2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/charliekehler/.rvm/gems/ruby-2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/charliekehler/.rvm/gems/ruby-2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/charliekehler/.rvm/gems/ruby-2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/charliekehler/.rvm/gems/ruby-2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/charliekehler/.rvm/gems/ruby-2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/charliekehler/.rvm/gems/ruby-2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/charliekehler/.rvm/gems/ruby-2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/charliekehler/.rvm/gems/ruby-2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/charliekehler/.rvm/gems/ruby-2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/charliekehler/.rvm/gems/ruby-2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Users/charliekehler/.rvm/gems/ruby-2.6.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/charliekehler/.rvm/gems/ruby-2.6.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/charliekehler/.rvm/gems/ruby-2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Users/charliekehler/.rvm/gems/ruby-2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Users/charliekehler/.rvm/gems/ruby-2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/Users/charliekehler/.rvm/gems/ruby-2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/charliekehler/.rvm/gems/ruby-2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/charliekehler/.rvm/gems/ruby-2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/charliekehler/.rvm/gems/ruby-2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:294:in `watch'
+/Users/charliekehler/.rvm/gems/ruby-2.6.0/gems/sass-3.7.4/lib/sass/plugin.rb:109:in `method_missing'
+/Users/charliekehler/.rvm/gems/ruby-2.6.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:358:in `watch_or_update'
+/Users/charliekehler/.rvm/gems/ruby-2.6.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/Users/charliekehler/.rvm/gems/ruby-2.6.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
+/Users/charliekehler/.rvm/gems/ruby-2.6.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
+/Users/charliekehler/.rvm/gems/ruby-2.6.0/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
+/Users/charliekehler/.rvm/gems/ruby-2.6.0/bin/sass:23:in `load'
+/Users/charliekehler/.rvm/gems/ruby-2.6.0/bin/sass:23:in `<main>'
+/Users/charliekehler/.rvm/gems/ruby-2.6.0/bin/ruby_executable_hooks:24:in `eval'
+/Users/charliekehler/.rvm/gems/ruby-2.6.0/bin/ruby_executable_hooks:24:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...h [Create React\": expected \"]\", was \" App](https://g...\"\A         on line 1 of README.md\A \A 1: This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).\A 2: \A 3: ## Available Scripts\A 4: \A 5: In the project directory, you can run:\A 6: "; }
