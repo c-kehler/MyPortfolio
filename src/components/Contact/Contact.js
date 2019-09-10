@@ -9,8 +9,11 @@ const Contact = () => {
         Have any questions? Want to hire me? Send a message, I'd love to hear
         from you.
       </div>
-      <form className="contact-container" name="contact" method="post">
-        <input type="hidden" name="form" value="contact" />
+      <form
+        className="contact-container"
+        action="https://formspree.io/charlespkehler@gmail.com"
+        method="POST"
+      >
         <p>Name</p>
         <input type="text" name="name"></input>
         <p>Email</p>
