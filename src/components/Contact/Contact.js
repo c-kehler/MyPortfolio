@@ -11,8 +11,9 @@ const Contact = () => {
       </div>
       <form
         className="contact-container"
-        action="https://formspree.io/charlespkehler@gmail.com"
+        name="contact"
         method="POST"
+        data-netlify="true"
       >
         <p>Name</p>
         <input type="text" name="name"></input>
