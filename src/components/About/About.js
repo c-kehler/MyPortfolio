@@ -57,7 +57,8 @@ const About = () => {
           <div className="about-header">Teamwork</div>
           <div className="about-text">
             I love opportunities to work with and learn from other developers.
-            I've worked in Agile environments.
+            I'm an effective and clear communicator who loves talking about
+            code.
           </div>
         </div>
       </div>
