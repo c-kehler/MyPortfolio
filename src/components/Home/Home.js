@@ -27,7 +27,9 @@ class Home extends React.Component {
             <p>Hello, I'm</p>
             <p className="welcome-colored">Charlie Kehler</p>
           </div>
-          <p>I'm a full-stack web developer.</p>
+          <div className="welcome-second-line">
+            <p>I'm a full-stack web developer.</p>
+          </div>
         </div>
       </div>
     );

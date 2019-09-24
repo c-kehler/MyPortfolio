@@ -1,3 +1,14 @@
+@mixin for-phone-only {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+
+// .App {
+//   overflow: hidden;
+//   width: 100%;
+// }
+
 .header-background-container {
   display: flex;
   justify-content: center;
@@ -12,6 +23,14 @@
     line-height: 0px;
     font-style: normal;
     font-weight: normal;
+    @include for-phone-only {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+    }
   }
 
   .welcome-firstline {
@@ -19,18 +38,50 @@
     flex-direction: row;
     justify-content: center;
     margin: 0px;
+    @include for-phone-only {
+      height: 100%;
+      align-items: center;
+      margin-bottom: 0px;
+      padding-bottom: 0px;
+    }
   }
   .welcome-colored {
     color: rgb(230, 57, 70);
     margin-left: 15px;
     font-family: "Roboto", sans-serif;
     animation: 2s ease-out 0s 1 wiggle;
+    @include for-phone-only {
+      margin-left: 8px;
+    }
   }
   p {
     margin-top: 5px;
   }
-}
+  @include for-phone-only {
+    .welcome-second-line {
+      min-height: 100%;
+      width: 360px;
 
+      p {
+        text-align: center;
+        white-space: normal;
+        word-wrap: break-word;
+        width: 100%;
+        margin-top: 0px;
+        line-height: 40px;
+      }
+    }
+    p {
+      margin-top: 0px;
+      line-height: 40px;
+      margin-block-start: 0em;
+      margin-block-end: 0em;
+    }
+  }
+}
+// * {
+//   border: red solid 1px;
+// }
 @keyframes wiggle {
   0% {
     transform: rotate(0deg);

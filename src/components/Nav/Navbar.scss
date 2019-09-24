@@ -1,7 +1,18 @@
+@mixin for-phone-only {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+
 header {
+  overflow: hidden;
   position: sticky;
   top: 0;
   z-index: 100;
+  @include for-phone-only {
+    position: -webkit-sticky;
+    display: none;
+  }
   nav {
     display: flex;
     flex-direction: row;
@@ -14,6 +25,7 @@ header {
     line-height: 24px;
     background: #00072e;
     cursor: pointer;
+
     .home {
       margin-left: 130px;
     }

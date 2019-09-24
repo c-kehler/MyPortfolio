@@ -25,10 +25,10 @@ const About = () => {
               data-inline="false"
             ></span>
           </div>
-          <div className="about-header">HEADER SENTENCE</div>
+          <div className="about-header">Diverse Skillset</div>
           <div className="about-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius urna
-            enim eu commodo.
+            I'm a passionate full stack developer and web designer. I love
+            building responsive, clean and user friendly web apps.
           </div>
         </div>
         <div className="about-blurb-container">
@@ -39,10 +39,11 @@ const About = () => {
               data-inline="false"
             ></span>
           </div>
-          <div className="about-header">HEADER SENTENCE</div>
+          <div className="about-header">My Stack</div>
           <div className="about-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius urna
-            enim eu commodo.
+            I'm proficient in React, Express and Ruby on Rails. I've built and
+            queried tons of RESTful APIs. I've built User Authentication from
+            scratch.
           </div>
         </div>
         <div className="about-blurb-container">
@@ -53,10 +54,10 @@ const About = () => {
               data-inline="false"
             ></span>
           </div>
-          <div className="about-header">HEADER SENTENCE</div>
+          <div className="about-header">Teamwork</div>
           <div className="about-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius urna
-            enim eu commodo.
+            I love opportunities to work with and learn from other developers.
+            I've worked in Agile environments.
           </div>
         </div>
       </div>

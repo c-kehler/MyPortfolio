@@ -1,7 +1,12 @@
 header {
+  overflow: hidden;
   position: sticky;
   top: 0;
   z-index: 100; }
+  @media (max-width: 599px) {
+    header {
+      position: -webkit-sticky;
+      display: none; } }
   header nav {
     display: flex;
     flex-direction: row;

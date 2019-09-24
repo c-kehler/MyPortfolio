@@ -1,6 +1,7 @@
 /* eslint-disable */
 import React from "react";
 import "./Navbar.css";
+import Sidenav from "./Sidenav";
 import {
   Link,
   DirectLink,
@@ -10,6 +11,7 @@ import {
   scrollSpy,
   scroller
 } from "react-scroll";
+import { slide as Menu } from "react-burger-menu";
 const durationFn = function(deltaTop) {
   return deltaTop;
 };
@@ -67,65 +69,72 @@ class Navbar extends React.Component {
     Events.scrollEvent.remove("begin");
     Events.scrollEvent.remove("end");
   }
+
+  showSettings(event) {
+    event.preventDefault();
+  }
+
   render() {
     return (
-      <header>
-        <nav class="container">
-          <a>
-            <div class="home">
-              <Link
-                activeClass="active"
-                to="home"
-                spy={true}
-                smooth={true}
-                duration={500}
-              >
-                HOME
-              </Link>
-            </div>
-          </a>
-          <a>
-            <div class="about">
-              <Link
-                activeClass="active"
-                to="about"
-                spy={true}
-                smooth={true}
-                duration={500}
-              >
-                ABOUT
-              </Link>
-            </div>
-          </a>
-          <a>
-            <div class="projects">
-              <Link
-                activeClass="active"
-                to="project"
-                spy={true}
-                smooth={true}
-                duration={500}
-                isDynamic={true}
-              >
-                PROJECTS
-              </Link>
-            </div>
-          </a>
-          <div class="contact">
+      <React.Fragment>
+        <header>
+          <nav class="container">
             <a>
-              <Link
-                activeClass="active"
-                to="contact"
-                spy={true}
-                smooth={true}
-                duration={500}
-              >
-                CONTACT
-              </Link>
+              <div class="home">
+                <Link
+                  activeClass="active"
+                  to="home"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                >
+                  HOME
+                </Link>
+              </div>
             </a>
-          </div>
-        </nav>
-      </header>
+            <a>
+              <div class="about">
+                <Link
+                  activeClass="active"
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                >
+                  ABOUT
+                </Link>
+              </div>
+            </a>
+            <a>
+              <div class="projects">
+                <Link
+                  activeClass="active"
+                  to="project"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  isDynamic={true}
+                >
+                  PROJECTS
+                </Link>
+              </div>
+            </a>
+            <div class="contact">
+              <a>
+                <Link
+                  activeClass="active"
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                >
+                  CONTACT
+                </Link>
+              </a>
+            </div>
+          </nav>
+        </header>
+      </React.Fragment>
     );
   }
 }

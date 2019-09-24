@@ -6,6 +6,7 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
 import * as Scroll from "react-scroll";
+import Sidenav from "./components/Nav/Sidenav";
 import {
   Link,
   Element,
@@ -18,6 +19,7 @@ import {
 function App() {
   return (
     <div className="App">
+      <Sidenav />
       <Element name="home" className="element">
         <Home />
       </Element>

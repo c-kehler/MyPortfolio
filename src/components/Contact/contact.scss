@@ -1,11 +1,20 @@
+@mixin for-phone-only {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
 .contact-page-container {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background: #002358;
+  padding-bottom: 30px;
+  @include for-phone-only {
+    padding-bottom: 15px;
+  }
 
   .contact-header {
     font-family: Roboto;
@@ -15,6 +24,9 @@
     color: white;
     text-align: center;
     margin-top: 100px;
+    @include for-phone-only {
+      font-size: 25px;
+    }
   }
   .contact-subheading {
     font-family: Raleway;
@@ -31,12 +43,19 @@
     margin-top: 60px;
     flex-direction: column;
     min-width: 60%;
+    @include for-phone-only {
+      margin-top: 30px;
+      min-width: 90%;
+    }
     p {
       color: white;
       font-family: Raleway;
       font-style: normal;
       font-weight: normal;
       font-size: 18px;
+      @include for-phone-only {
+        font-size: 16px;
+      }
     }
     input {
       height: 35px;
