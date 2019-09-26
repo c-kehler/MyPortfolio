@@ -14,7 +14,7 @@
 
   /* Color/shape of burger icon bars */
   .bm-burger-bars {
-    background: white;
+    background: rgb(230, 57, 70);
   }
 
   /* Color/shape of burger icon bars on hover*/
@@ -57,7 +57,7 @@
 
   /* Wrapper for item list */
   .bm-item-list {
-    color: #b8b7ad;
+    color: white;
     padding: 0.8em;
   }
 
@@ -65,6 +65,7 @@
   .bm-item {
     display: inline-block;
     overflow: hidden;
+    outline: none;
   }
 
   /* Styling of overlay */

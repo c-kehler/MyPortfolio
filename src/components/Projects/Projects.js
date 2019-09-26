@@ -28,7 +28,7 @@ const Projects = () => {
             </div>
           </div>
         </a>{" "}
-        <a href="http://beer-app.surge.sh/">
+        <a href="http://fantasytranslator.surge.sh/">
           <div className="project-image3">
             <div className="project-info">
               <p className="project-title">Fantasy Translator</p>

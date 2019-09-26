@@ -7,6 +7,7 @@ import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
 import * as Scroll from "react-scroll";
 import Sidenav from "./components/Nav/Sidenav";
+import Footer from "./components/Footer/Footer";
 import {
   Link,
   Element,
@@ -33,6 +34,7 @@ function App() {
       <Element name="contact" className="element">
         <Contact />
       </Element>
+      <Footer />
     </div>
   );
 }
